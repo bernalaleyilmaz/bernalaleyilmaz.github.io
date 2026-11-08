@@ -536,7 +536,7 @@
           role="group"
           aria-label="Projeleri dile göre filtrele"
         >
-          <button aria-pressed="true" data-filter="all">Tümü (5)</button
+          <button aria-pressed="true" data-filter="all">Tümü (6)</button
           ><button aria-pressed="false" data-filter="JavaScript">JavaScript</button
           ><button aria-pressed="false" data-filter="Python">Python</button
           ><button aria-pressed="false" data-filter="HTML">HTML</button
@@ -544,15 +544,15 @@
           ><button aria-pressed="false" data-filter="C++">C++</button
           ><button aria-pressed="false" data-filter="CMake">CMake</button
           ><button aria-pressed="false" data-filter="Java">Java</button>
+          <button aria-pressed="false" data-filter="SQL">SQL</button>
         </div>
         <p class="language-note">
-          Yüzdeler GitHub dil istatistiklerindeki kod miktarını gösterir. Son güncelleme:
-          12 Ekim 2026.
+          Yüzdeler GitHub’ın kod dili istatistiklerini gösterir. SQL filtresi, veritabanı teknolojisi olarak SQL kullanan projeleri listeler.
         </p>
         <div class="grid">
           <article
             class="card reveal repo-card"
-            data-languages="JavaScript|Python|HTML|CSS"
+            data-languages="JavaScript|Python|HTML|CSS|SQL"
           >
             <div class="repo-banner">
               <span aria-hidden="true">▤</span><code>Book-Recommendation</code>
@@ -757,22 +757,62 @@
               </div>
             </div>
           </article>
+          <article class="card reveal repo-card" data-languages="Python|JavaScript|CSS|HTML|SQL">
+            <div class="repo-banner">
+              <span aria-hidden="true">▣</span><code>Computer_Science_Quiz_System</code>
+            </div>
+            <div class="cardcontent">
+              <small>GITHUB PROJESİ / 06</small>
+              <h3>CSQuiz – Bilgisayar Bilimleri Quiz Sistemi</h3>
+              <p>Yapay zekâ, veritabanları ve API konularında 150 soru içeren, Python ve SQLite ile geliştirilmiş quiz sistemi.</p>
+              <div class="tech-tags"><span>Python</span><span>SQL</span><span>SQLite</span><span>JavaScript</span></div>
+              <div class="language-stats" aria-label="Kod miktarına göre dil dağılımı">
+                <div class="language-row">
+                  <div><span>Python</span><span>47,4%</span></div>
+                  <div class="language-track">
+                    <span style="--amount: 47.4158%; --lang-color: #9672bf"></span>
+                  </div>
+                </div>
+                <div class="language-row">
+                  <div><span>JavaScript</span><span>28,6%</span></div>
+                  <div class="language-track">
+                    <span style="--amount: 28.6333%; --lang-color: #bc487c"></span>
+                  </div>
+                </div>
+                <div class="language-row">
+                  <div><span>CSS</span><span>21,7%</span></div>
+                  <div class="language-track">
+                    <span style="--amount: 21.6700%; --lang-color: #839cca"></span>
+                  </div>
+                </div>
+                <div class="language-row">
+                  <div><span>HTML</span><span>2,3%</span></div>
+                  <div class="language-track">
+                    <span style="--amount: 2.2808%; --lang-color: #d87680"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="repo-actions">
+                <button data-project="5">Proje detayları ↗</button>
+                <a href="https://github.com/bernalaleyilmaz/Computer_Science_Quiz_System" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
         </div>
-        <p id="project-count" aria-live="polite">5 proje gösteriliyor</p>
+        <p id="project-count" aria-live="polite">6 proje gösteriliyor</p>
       </div>
     </section>
     <section class="closing reveal">
       <h2>Hikâyem <em>devam ediyor.</em></h2>
       <p>
-        Yeni fikirler, yeni projeler ve küçük başlangıçlar…<br />Hepsi burada bir araya
+        Yeni fikirler ve yeni projeler …<br />Hepsi burada bir araya
         gelecek.
       </p>
       <a class="textlink" href="#anasayfa">Başa dön ↑</a>
     </section>
     <div class="wrap">
       <footer>
-        <span>© <span id="year">2026</span> Berna Lale Yılmaz</span
-        ><span>Pembe dokunuşlarla hazırlandı ✧</span>
+        <span>© <span id="year">2026</span> Berna Lale Yılmaz</span>
       </footer>
     </div>
     <dialog id="detail" aria-labelledby="detail-title">

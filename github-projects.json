@@ -90,5 +90,26 @@
       "Python": 1496
     },
     "language": "Python"
+  },
+  {
+    "title": "CSQuiz – Bilgisayar Bilimleri Quiz Sistemi",
+    "icon": "▣",
+    "desc": "Yapay zekâ, veritabanları ve API konularında 150 soru içeren, Python ve SQLite ile geliştirilmiş quiz sistemi.",
+    "tech": [
+      "Python",
+      "SQL",
+      "SQLite",
+      "JavaScript"
+    ],
+    "detail": "Sistem, her biri 30 soruluk beş quiz oturumu içeriyor. SQLite şeması kullanıcıları, oturumları, soruları ve cevapları ilişkili tablolarda saklıyor. SQL sorguları ilerlemeyi, puanları ve sıralamayı hesaplıyor; kısıtlar ve tetikleyiciler veri bütünlüğünü koruyor. Oturum yöneticisi quizleri başlatabiliyor ve sonuçları görüntüleyebiliyor.",
+    "name": "Computer_Science_Quiz_System",
+    "url": "https://github.com/bernalaleyilmaz/Computer_Science_Quiz_System",
+    "languages": {
+      "Python": 72220,
+      "JavaScript": 43612,
+      "CSS": 33006,
+      "HTML": 3474
+    },
+    "language": "Python"
   }
 ]
