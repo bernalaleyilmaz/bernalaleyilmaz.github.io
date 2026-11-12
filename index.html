@@ -201,24 +201,52 @@
     <div class="wrap">
       <nav aria-label="Ana menü">
         <a class="brand" href="#anasayfa">berna lale<span> .</span></a>
-        <div class="navlinks">
-          <a href="#hakkimda">Hakkımda</a
-          ><a href="#projelerim">Projelerim <span aria-hidden="true">↗</span></a>
+        <div class="nav-right">
+          <div class="navlinks">
+            <a href="#hakkimda" data-i18n="nav.about">Hakkımda</a>
+            <a href="#yetenekler" data-i18n="nav.skills">Yetenekler</a>
+            <a href="#projelerim" data-i18n="nav.projects">Projelerim</a>
+            <a href="#iletisim" data-i18n="nav.contact">İletişim • bernayilmaz579@gmail.com</a>
+          </div>
+          <div class="nav-controls" role="group" aria-label="Görünüm ve dil ayarları">
+            <button
+              type="button"
+              id="lang-toggle"
+              class="icon-pill"
+              aria-label="Dili değiştir / Switch language"
+              title="TR / EN"
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              id="theme-toggle"
+              class="icon-pill"
+              aria-label="Gece modunu aç veya kapat"
+              title="Tema değiştir"
+            >
+              <span id="theme-icon" aria-hidden="true">🌙</span>
+            </button>
+          </div>
         </div>
       </nav>
       <main>
         <section class="hero" id="anasayfa">
           <div>
-            <div class="eyebrow">Kişisel dünyama hoş geldin</div>
-            <h1>Merhaba,<br />ben <em>Berna Lale</em><br />Yılmaz.</h1>
-            <p class="intro">
+            <div class="eyebrow" data-i18n="hero.eyebrow">Kişisel dünyama hoş geldin</div>
+            <h1 data-i18n-html="hero.title">Merhaba,<br />ben <em>Berna Lale</em><br />Yılmaz.</h1>
+            <p class="intro" data-i18n="hero.intro">
               Beni, fikirlerimi ve projelerimi bir araya getiren küçük bir dijital alan.
               Burada hikâyemi keşfedebilirsin.
             </p>
             <div class="buttons">
-              <a class="pill" href="#projelerim"
+              <a class="pill" href="#projelerim" data-i18n-html="hero.cta"
                 >Projelerimi keşfet <span aria-hidden="true">↗</span></a
-              ><a class="textlink" href="#hakkimda">Beni tanı</a>
+              >
+              <button type="button" class="pill pill-outline open-cv" data-i18n-html="hero.cv">
+                Özgeçmiş (CV) <span aria-hidden="true">↓</span>
+              </button>
+              <a class="textlink" href="#hakkimda" data-i18n="hero.more">Beni tanı</a>
             </div>
           </div>
           <div
@@ -484,45 +512,219 @@
               </svg>
             </div>
           </div>
-          <a class="scroll" href="#hakkimda"
+          <a class="scroll" href="#hakkimda" data-i18n-html="hero.scroll"
             >HİKÂYEMİ KEŞFET <span aria-hidden="true">↓</span></a
           >
         </section>
       </main>
     </div>
-    <div class="ribbon" aria-hidden="true">
-      <div>FİKİRLER <b>✳</b> HİKÂYELER <b>✳</b> PROJELER <b>✳</b> YENİ BAŞLANGIÇLAR</div>
+    <div class="ribbon">
+      <div data-i18n-html="ribbon">
+        <a href="#hakkimda">HİKÂYEM</a> <b>✳</b> <a href="#projelerim">PROJELER</a>
+      </div>
     </div>
     <section id="hakkimda" class="section wrap about reveal">
       <div>
-        <div class="eyebrow">01 / Hakkımda</div>
-        <h2>Kendi hikâyemi<br /><em>yazıyorum.</em></h2>
+        <div class="eyebrow" data-i18n="about.eyebrow">01 / Hakkımda</div>
+        <h2 data-i18n-html="about.title">Kendi hikâyemi<br /><em>yazıyorum.</em></h2>
+        <div class="about-cta">
+          <button type="button" class="pill open-cv" data-i18n-html="about.cvBtn">
+            Özgeçmiş (CV) <span aria-hidden="true">↓</span>
+          </button>
+        </div>
       </div>
       <div>
-        <p class="copy">
+        <p class="copy" data-i18n="about.p1">
           Ben Berna Lale Yılmaz. Bu site, kendimi tanıtmak ve üzerinde çalıştığım
           projeleri paylaşmak için hazırladığım kişisel portfolyom.
         </p>
-        <p class="copy">
-         İstanbul Bilgi Üniversitesinde Bilgisayar Mühendisliği okuyorum. 3. sınıf öğrencisiyim. Java, Python ve C++ dillerini biliyorum.
-          Yapay zeka. Veri bilimi, Makine öğrenimi ve DevOps alanında kendimi geliştiriyorum.
+        <p class="copy" data-i18n="about.p2">
+          İstanbul Bilgi Üniversitesinde Bilgisayar Mühendisliği okuyorum. 3. sınıf öğrencisiyim. Java, Python ve C++ dillerini biliyorum.
+          Yapay zekâ, Veri bilimi, Makine öğrenimi ve DevOps alanında kendimi geliştiriyorum.
         </p>
         <div class="tags">
-          <span class="tag">Hikâyem</span><span class="tag">İlgi alanlarım</span
-          ><span class="tag">Hedeflerim</span>
+          <a class="tag" href="#egitim-yolculugum" data-i18n="about.tag1">Hikâyem</a
+          ><a class="tag" href="#yetenekler" data-i18n="about.tag2">İlgi alanlarım</a
+          ><a class="tag" href="#guncel-odak" data-i18n="about.tag3">Hedeflerim</a>
         </div>
 
+        <div id="egitim-yolculugum" class="timeline-block">
+          <h3 class="subhead" data-i18n-html="timeline.title">
+            Eğitim &amp; <em>Yolculuğum</em>
+          </h3>
+          <ol class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-meta" data-i18n="timeline.t1.date">2026 – Günümüz • 3. Sınıf</div>
+              <h4 data-i18n="timeline.t1.title">Yapay Zekâ, Veri Bilimi &amp; DevOps Odaklı Gelişim</h4>
+              <p data-i18n="timeline.t1.desc">
+                Makine öğrenimi tabanlı öneri sistemleri, ilişkisel veritabanı mimarisi (PostgreSQL/SQLite) ve modern DevOps süreçleri üzerine projeler geliştiriyorum.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-meta" data-i18n="timeline.t2.date">2025 – 2026 • 2. Sınıf</div>
+              <h4 data-i18n="timeline.t2.title">Algoritmalar, Veri Yapıları &amp; Sistem Programlama</h4>
+              <p data-i18n="timeline.t2.desc">
+                Java ile performans analizleri, C++ ile projeler geliştirme, Algoritmalar ile geliştirmeler.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-meta" data-i18n="timeline.t3.date">2024 – 2025 • 1. Sınıf</div>
+              <h4 data-i18n="timeline.t3.title">İstanbul Bilgi Üniversitesi • Bilgisayar Mühendisliği</h4>
+              <p data-i18n="timeline.t3.desc">
+                Mühendislik, Fizik ve Matematik temelleri, nesne yönelimli programlama ve yazılım geliştirmeye ilk adım.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-meta" data-i18n="timeline.t4.date">2023 – 2024 • Hazırlık</div>
+              <h4 data-i18n="timeline.t4.title">İstanbul Bilgi Üniversitesi • İngilizce Hazırlık</h4>
+              <p data-i18n="timeline.t4.desc">
+                İngilizce hazırlık programını başarıyla tamamladım; ileri seviye (Advanced) İngilizce okuma, yazma ve iletişim yetkinliği kazandım.
+              </p>
+            </li>
+          </ol>
+        </div>
       </div>
     </section>
+
+    <section id="yetenekler" class="section wrap skills-section reveal">
+      <div class="sectionhead">
+        <div>
+          <div class="eyebrow" data-i18n="skills.eyebrow">02 / Yetenekler &amp; Odak</div>
+          <h2 data-i18n-html="skills.title">Teknoloji <em>yığınım.</em></h2>
+        </div>
+        <p data-i18n="skills.subtitle">
+          Projelerimde aktif kullandığım programlama dilleri, kütüphaneler ve mühendislik araçları.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-card-head">
+            <span class="skill-icon" aria-hidden="true">⌘</span>
+            <div>
+              <small data-i18n="skills.c1.sub">TEMEL DİLLER</small>
+              <h3 data-i18n="skills.c1.title">Programlama Dilleri</h3>
+            </div>
+          </div>
+          <p data-i18n="skills.c1.desc">
+            Nesne yönelimli programlama, veri yapıları, algoritma analizi ve uygulama geliştirme.
+          </p>
+          <div class="skill-pills">
+            <span>Python</span>
+            <span>Java</span>
+            <span>C++</span>
+            <span>PostgreSQL</span>
+            <span>JavaScript</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-card-head">
+            <span class="skill-icon" aria-hidden="true">✦</span>
+            <div>
+              <small data-i18n="skills.c2.sub">VERİ &amp; MODELLER</small>
+              <h3 data-i18n="skills.c2.title">Yapay Zekâ &amp; Veri Bilimi</h3>
+            </div>
+          </div>
+          <p data-i18n="skills.c2.desc">
+            Öneri sistemleri, metin madenciliği, veri ön işleme ve istatistiksel görselleştirme.
+          </p>
+          <div class="skill-pills">
+            <span>scikit-learn</span>
+            <span>Pandas</span>
+            <span>TF-IDF &amp; Kosinüs Benzerliği</span>
+            <span>Veri Analizi</span>
+            <span>Gemini API</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-card-head">
+            <span class="skill-icon" aria-hidden="true">▤</span>
+            <div>
+              <small data-i18n="skills.c3.sub">UYGULAMA &amp; VERİTABANI</small>
+              <h3 data-i18n="skills.c3.title">Web &amp; Sistem Mimarisi</h3>
+            </div>
+          </div>
+          <p data-i18n="skills.c3.desc">
+            Modern kullanıcı arayüzleri, hızlı arka uç API servisleri ve ilişkisel veritabanı şemaları.
+          </p>
+          <div class="skill-pills">
+            <span>FastAPI</span>
+            <span>React</span>
+            <span>PostgreSQL</span>
+            <span>SQLite</span>
+            <span>HTML5 &amp; CSS3</span>
+            <span>SFML &amp; Tkinter</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-card-head">
+            <span class="skill-icon" aria-hidden="true">⚙</span>
+            <div>
+              <small data-i18n="skills.c4.sub">ARAÇLAR &amp; SÜREÇ</small>
+              <h3 data-i18n="skills.c4.title">Geliştirme &amp; DevOps</h3>
+            </div>
+          </div>
+          <p data-i18n="skills.c4.desc">
+            Sürüm kontrolü, proje derleme araçları ve modern yazılım geliştirme süreçleri.
+          </p>
+          <div class="skill-pills">
+            <span>Git &amp; GitHub</span>
+            <span>CMake</span>
+            <span data-i18n="skills.c4.p3">DevOps Temelleri</span>
+          </div>
+        </article>
+      </div>
+
+      <div id="guncel-odak" class="now-box">
+        <div class="now-header">
+          <div>
+            <span class="now-badge" data-i18n="now.badge">● ŞU SIRALAR NELER ÖĞRENİYORUM?</span>
+            <h3 data-i18n-html="now.title">Güncel odak &amp; <em>öğrenme notlarım</em></h3>
+          </div>
+          <span class="now-date" data-i18n="now.date">Güncelleme: 2026</span>
+        </div>
+        <div class="now-grid">
+          <div class="now-item">
+            <small data-i18n="now.n1.tag">MAKİNE ÖĞRENİMİ &amp; AI</small>
+            <h4 data-i18n="now.n1.title">Derinleşen Öneri Sistemleri &amp; NLP</h4>
+            <p data-i18n="now.n1.desc">
+              İçerik tabanlı filtrelemenin ötesine geçerek hibrit öneri modelleri, vektör temsilleri (embeddings) ve büyük dil modeli (LLM) entegrasyonları üzerine çalışıyorum.
+            </p>
+          </div>
+          <div class="now-item">
+            <small data-i18n="now.n2.tag">DEVOPS &amp; YAZILIM SÜREÇLERİ</small>
+            <h4 data-i18n="now.n2.title">DevOps Temelleri &amp; Git İş Akışları</h4>
+            <p data-i18n="now.n2.desc">
+              Modern yazılım geliştirme yaşam döngüsü, sürüm kontrol stratejileri ve projelerde otomatik süreç yönetimi (DevOps) kültürünü öğreniyorum.
+            </p>
+          </div>
+          <div class="now-item">
+            <small data-i18n="now.n3.tag">VERİ BİLİMİ &amp; POSTGRESQL</small>
+            <h4 data-i18n="now.n3.title">Veri Mühendisliği &amp; Sorgu Optimizasyonu</h4>
+            <p data-i18n="now.n3.desc">
+              Çok tablolu ilişkisel veritabanlarında tetikleyiciler (triggers), karmaşık analitik sorgular ve veri bütünlüğü yapıları üzerinde pratik yapıyorum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="projelerim" class="section projects">
       <div class="wrap">
         <div class="sectionhead reveal">
           <div>
-            <div class="eyebrow">02 / Projelerim</div>
-            <h2>Fikirden <em>gerçeğe.</em></h2>
+            <div class="eyebrow" data-i18n="projects.eyebrow">03 / Projelerim</div>
+            <h2 data-i18n-html="projects.title">Fikirden <em>gerçeğe.</em></h2>
           </div>
           <p>
-            GitHub’daki herkese açık projelerim.<br /><a
+            <span data-i18n="projects.subtitle">GitHub’daki herkese açık projelerim.</span><br /><a
               class="textlink"
               href="https://github.com/bernalaleyilmaz"
               target="_blank"
@@ -536,7 +738,7 @@
           role="group"
           aria-label="Projeleri dile göre filtrele"
         >
-          <button aria-pressed="true" data-filter="all">Tümü (6)</button
+          <button aria-pressed="true" data-filter="all" data-i18n="projects.all">Tümü (6)</button
           ><button aria-pressed="false" data-filter="JavaScript">JavaScript</button
           ><button aria-pressed="false" data-filter="Python">Python</button
           ><button aria-pressed="false" data-filter="HTML">HTML</button
@@ -546,7 +748,7 @@
           ><button aria-pressed="false" data-filter="Java">Java</button>
           <button aria-pressed="false" data-filter="SQL">SQL</button>
         </div>
-        <p class="language-note">
+        <p class="language-note" data-i18n="projects.note">
           Yüzdeler GitHub’ın kod dili istatistiklerini gösterir. SQL filtresi, veritabanı teknolojisi olarak SQL kullanan projeleri listeler.
         </p>
         <div class="grid">
@@ -799,35 +1001,194 @@
             </div>
           </article>
         </div>
-        <p id="project-count" aria-live="polite">6 proje gösteriliyor</p>
+        <p id="project-count" aria-live="polite" data-i18n="projects.count">6 proje gösteriliyor</p>
+      </div>
+    </section>
+    <section id="iletisim" class="section wrap contact reveal">
+      <div class="contact-info">
+        <div class="eyebrow" data-i18n="contact.eyebrow">04 / İletişim</div>
+        <h2 data-i18n-html="contact.title">Benimle<br /><em>iletişime geç.</em></h2>
+        <p class="copy" data-i18n="contact.desc">
+          Yeni proje fikirleri, staj ve iş birliği fırsatları ya da sadece tanışmak için
+          bana her zaman yazabilirsin. En kısa sürede dönüş yaparım.
+        </p>
+        <div class="contact-cards">
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">✉</span>
+            <div class="contact-detail">
+              <small data-i18n="contact.emailLabel">E-POSTA</small>
+              <a id="contact-email" href="mailto:bernayilmaz579@gmail.com"
+                >bernayilmaz579@gmail.com</a
+              >
+            </div>
+            <button
+              type="button"
+              class="copy-btn"
+              id="copy-email"
+              data-email="bernayilmaz579@gmail.com"
+              aria-label="E-posta adresini kopyala"
+              data-i18n="contact.copy"
+            >
+              Kopyala
+            </button>
+          </div>
+          <a
+            class="contact-item"
+            href="https://github.com/bernalaleyilmaz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-icon" aria-hidden="true">⌘</span>
+            <div class="contact-detail">
+              <small>GITHUB</small>
+              <span>github.com/bernalaleyilmaz</span>
+            </div>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a
+            class="contact-item"
+            href="https://www.linkedin.com/in/bernalaleyilmaz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-icon" aria-hidden="true">✦</span>
+            <div class="contact-detail">
+              <small>LINKEDIN</small>
+              <span>linkedin.com/in/bernalaleyilmaz</span>
+            </div>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">❀</span>
+            <div class="contact-detail">
+              <small data-i18n="contact.locLabel">KONUM &amp; EĞİTİM</small>
+              <span data-i18n="contact.locVal">İstanbul, Türkiye • İstanbul Bilgi Üniversitesi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-box">
+        <form id="contact-form" class="contact-form">
+          <div class="form-head">
+            <span class="spark-inline" aria-hidden="true">✧</span>
+            <h3 data-i18n-html="contact.formTitle">Bana mesaj <em>bırak</em></h3>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="sender-name" data-i18n="contact.nameLabel">Adın Soyadın</label>
+              <input
+                type="text"
+                id="sender-name"
+                name="name"
+                placeholder="Örn. Ayşe Yılmaz"
+                data-i18n-placeholder="contact.namePh"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="sender-email" data-i18n="contact.emailInputLabel">E-posta Adresin</label>
+              <input
+                type="email"
+                id="sender-email"
+                name="email"
+                placeholder="ornek@eposta.com"
+                data-i18n-placeholder="contact.emailPh"
+                required
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label for="sender-subject" data-i18n="contact.subjectLabel">Konu</label>
+            <select id="sender-subject" name="subject">
+              <option value="Proje & İş Birliği" data-i18n="contact.opt1">Proje &amp; İş Birliği</option>
+              <option value="Staj & Kariyer Fırsatı" data-i18n="contact.opt2">Staj &amp; Kariyer Fırsatı</option>
+              <option value="Soru & Görüş" data-i18n="contact.opt3">Soru &amp; Görüş</option>
+              <option value="Merhaba!" data-i18n="contact.opt4">Sadece Merhaba Demek İstedim 🌸</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sender-message" data-i18n="contact.msgLabel">Mesajın</label>
+            <textarea
+              id="sender-message"
+              name="message"
+              rows="4"
+              placeholder="Mesajını buraya yazabilirsin..."
+              data-i18n-placeholder="contact.msgPh"
+              required
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="pill" data-i18n-html="contact.sendBtn">
+              Mesajı gönder <span aria-hidden="true">↗</span>
+            </button>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </div>
+        </form>
       </div>
     </section>
     <section class="closing reveal">
-      <h2>Hikâyem <em>devam ediyor.</em></h2>
-      <p>
+      <h2 data-i18n-html="closing.title">Hikâyem <em>devam ediyor.</em></h2>
+      <p data-i18n-html="closing.text">
         Yeni fikirler ve yeni projeler …<br />Hepsi burada bir araya
         gelecek.
       </p>
-      <a class="textlink" href="#anasayfa">Başa dön ↑</a>
+      <a class="textlink" href="#anasayfa" data-i18n="closing.top">Başa dön ↑</a>
     </section>
     <div class="wrap">
       <footer>
         <span>© <span id="year">2026</span> Berna Lale Yılmaz</span>
+        <div class="footer-links">
+          <a href="#hakkimda" data-i18n="nav.about">Hakkımda</a>
+          <a href="#yetenekler" data-i18n="nav.skills">Yetenekler</a>
+          <a href="#projelerim" data-i18n="nav.projects">Projelerim</a>
+          <a href="#iletisim" data-i18n="footer.contact">İletişim</a>
+          <a
+            href="https://github.com/bernalaleyilmaz"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub ↗</a
+          >
+        </div>
       </footer>
     </div>
     <dialog id="detail" aria-labelledby="detail-title">
-      <small>GITHUB PROJESİ</small>
+      <small data-i18n="modal.badge">GITHUB PROJESİ</small>
       <h3 id="detail-title"></h3>
       <p id="detail-text"></p>
       <div id="detail-tech" class="tech-tags"></div>
       <p>
-        <a id="detail-github" class="textlink" target="_blank" rel="noopener noreferrer"
+        <a
+          id="detail-github"
+          class="textlink"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-i18n="modal.source"
           >Kaynak kodunu incele ↗</a
         >
       </p>
-      <form method="dialog"><button>Kapat</button></form>
+      <form method="dialog"><button data-i18n="modal.close">Kapat</button></form>
     </dialog>
-    <!-- Filtreleme ve proje detayları -->
+
+    <dialog id="cv-modal" class="cv-dialog" aria-labelledby="cv-title">
+      <div class="cv-sheet">
+        <header class="cv-header">
+          <div>
+            <small data-i18n="cv.badge">ÖZGEÇMİŞ / CURRICULUM VITAE</small>
+            <h3 id="cv-title">Berna Lale Yılmaz</h3>
+          </div>
+        </header>
+
+        <!-- Kendi CV metnini veya PDF bağlantını bu alana ekleyebilirsin -->
+        <div id="cv-content" class="cv-empty"></div>
+
+        <div class="cv-actions">
+          <form method="dialog">
+            <button type="submit" class="cv-close-btn" data-i18n="modal.close">Kapat</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <!-- Filtreleme, tema, dil ve proje detayları -->
     <script src="app.js" defer></script>
   </body>
 </html>

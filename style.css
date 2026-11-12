@@ -1160,3 +1160,807 @@ nav {
     animation: none !important;
   }
 }
+
+/* 03 / İletişim — Pembe cam temalı iletişim alanı */
+.contact {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 54px;
+  align-items: start;
+  padding: 58px 46px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  background: #fff7fc80;
+  border: 1px solid #ffffffc9;
+  border-radius: 32px;
+  box-shadow: 0 18px 55px #a85a8112;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.contact-cards {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 18px;
+  background: #fff9fcbf;
+  border: 1px solid #ffffffe0;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px #a551800d;
+  transition:
+    transform 0.18s,
+    border-color 0.18s,
+    box-shadow 0.18s;
+}
+a.contact-item:hover {
+  transform: translateY(-3px);
+  border-color: #eab8d1;
+  box-shadow: 0 12px 28px #a551801c;
+}
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f5bfd8, #fce3ef);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.contact-detail {
+  flex: 1;
+  min-width: 0;
+}
+.contact-detail small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 3px;
+}
+.contact-detail span,
+.contact-detail a {
+  display: block;
+  font-size: 13px;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+.contact-detail a:hover {
+  color: var(--accent);
+}
+.contact-arrow {
+  font-size: 14px;
+  color: #a8567b;
+  padding-right: 4px;
+}
+.copy-btn {
+  cursor: pointer;
+  border: 1px solid #ecc6d9;
+  background: #f9e3ee;
+  color: var(--ink);
+  border-radius: 18px;
+  padding: 7px 13px;
+  font-size: 11px;
+  transition:
+    background 0.15s,
+    color 0.15s;
+  flex-shrink: 0;
+}
+.copy-btn:hover {
+  background: #f0bdd5;
+}
+.copy-btn.copied {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+.contact-box {
+  background: #fff9fccf;
+  border: 1px solid #ffffffe6;
+  border-radius: 26px;
+  padding: 32px 30px;
+  box-shadow: 0 14px 40px #a5518014;
+}
+.form-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+.spark-inline {
+  color: var(--accent);
+  font-size: 20px;
+}
+.form-head h3 {
+  font-size: 28px;
+  margin: 0;
+}
+.form-head h3 em {
+  color: var(--accent);
+}
+.contact-form {
+  display: grid;
+  gap: 16px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.field {
+  display: grid;
+  gap: 7px;
+}
+.field label {
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #77465e;
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 13px;
+  color: var(--ink);
+  background: #fff5fa99;
+  border: 1px solid #ebd0de;
+  border-radius: 14px;
+  padding: 12px 14px;
+  transition:
+    border-color 0.18s,
+    background 0.18s,
+    box-shadow 0.18s;
+}
+.field textarea {
+  resize: vertical;
+  min-height: 108px;
+  line-height: 1.6;
+}
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #b0899b;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px #e99ec038;
+}
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.form-actions .pill {
+  border: 0;
+  cursor: pointer;
+}
+.form-status {
+  margin: 0;
+  font-size: 12px;
+  color: var(--accent);
+}
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-links a:hover {
+  color: var(--accent);
+}
+@media (max-width: 800px) {
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin: 40px 18px 10px;
+    padding: 35px 22px;
+    border-radius: 26px;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: #fff7fcbf;
+  }
+  .contact-box {
+    padding: 24px 18px;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Menü kontrolleri (Dil & Gece Modu) ve CV Butonu */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon-pill {
+  cursor: pointer;
+  border: 1px solid #ecc6d9;
+  background: #fff5fbcc;
+  color: var(--ink);
+  border-radius: 20px;
+  height: 36px;
+  min-width: 40px;
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.18s,
+    transform 0.18s,
+    border-color 0.18s;
+}
+.icon-pill:hover {
+  background: #f4cbe0;
+  transform: translateY(-2px);
+}
+.buttons {
+  flex-wrap: wrap;
+}
+.pill-outline {
+  background: #fff7fccc;
+  color: var(--ink);
+  border: 1px solid #dfb0c7;
+  cursor: pointer;
+  box-shadow: 0 6px 20px #a5518012;
+}
+.pill-outline:hover {
+  background: #f6d5e6;
+  color: var(--ink);
+}
+.about-cta {
+  margin-top: 28px;
+}
+.about-cta .pill {
+  border: 0;
+  cursor: pointer;
+}
+
+/* Eğitim & Yolculuğum (Zaman Çizelgesi / Timeline) */
+.timeline-block {
+  margin-top: 38px;
+  padding-top: 32px;
+  border-top: 1px solid #edd2df;
+}
+.subhead {
+  font-size: 28px;
+  margin: 0 0 22px;
+}
+.subhead em {
+  color: var(--accent);
+}
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 22px;
+  border-left: 2px solid #e6b8cf;
+  display: grid;
+  gap: 24px;
+}
+.timeline-item {
+  position: relative;
+  background: #fff9fcc7;
+  border: 1px solid #ffffffe0;
+  border-radius: 20px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 24px #a551800d;
+}
+.timeline-dot {
+  position: absolute;
+  left: -30px;
+  top: 22px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid #ffeaf5;
+  box-shadow: 0 0 0 3px #e6b8cf66;
+}
+.timeline-meta {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.timeline-item h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.timeline-item p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.75;
+  color: #714457;
+}
+
+/* 02 / Yetenekler & Teknoloji Yığını */
+.skills-section {
+  padding-top: 40px;
+  padding-bottom: 95px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+.skill-card {
+  background: #fff7fcbf;
+  border: 1px solid #ffffffd9;
+  border-radius: 26px;
+  padding: 26px 26px 24px;
+  box-shadow: 0 12px 35px #a5518012;
+  transition:
+    transform 0.18s,
+    box-shadow 0.18s;
+}
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 42px #a5518022;
+}
+.skill-card-head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f3bad4, #fbe1ef);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.skill-card-head small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 3px;
+}
+.skill-card-head h3 {
+  font-size: 24px;
+  margin: 0;
+}
+.skill-card p {
+  font-size: 13px;
+  line-height: 1.75;
+  color: #714457;
+  margin: 0 0 18px;
+}
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.skill-pills span {
+  background: #f7dfec;
+  border: 1px solid #ebc9dc;
+  color: var(--ink);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 6px 13px;
+}
+
+/* Şu Sıralar Neler Öğreniyorum? (Now / Güncel Odak) */
+.now-box {
+  margin-top: 32px;
+  background: linear-gradient(135deg, #fff6fbcc, #fce2f0b3);
+  border: 1px solid #ffffffe0;
+  border-radius: 28px;
+  padding: 32px 32px 30px;
+  box-shadow: 0 14px 40px #a5518014;
+}
+.now-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ecc9dc;
+}
+.now-badge {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+  color: var(--accent);
+  background: #f9dced;
+  border: 1px solid #eabdd6;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+.now-header h3 {
+  font-size: 30px;
+  margin: 0;
+}
+.now-header h3 em {
+  color: var(--accent);
+}
+.now-date {
+  font-size: 11px;
+  color: #84536a;
+  background: #ffffff99;
+  padding: 6px 13px;
+  border-radius: 20px;
+  border: 1px solid #ffffffd9;
+}
+.now-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.now-item {
+  background: #fffafdd9;
+  border: 1px solid #ffffffeb;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 22px #a551800d;
+}
+.now-item small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 7px;
+}
+.now-item h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.now-item p {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.75;
+  color: #714457;
+}
+
+/* Özgeçmiş (CV) Penceresi */
+.cv-dialog {
+  max-width: 720px;
+  width: 92%;
+  padding: 36px;
+  border-radius: 26px;
+}
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e7c4d5;
+  margin-bottom: 20px;
+}
+.cv-header small {
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+.cv-header h3 {
+  font-size: 32px;
+  margin: 6px 0;
+}
+.cv-role {
+  margin: 0;
+  font-size: 13px;
+  color: #714457;
+}
+.cv-contact-mini {
+  display: grid;
+  gap: 4px;
+  font-size: 11.5px;
+  color: #714457;
+  text-align: right;
+}
+.cv-section {
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0d7e3;
+}
+.cv-section h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+.cv-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.cv-section p {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.7;
+}
+.cv-list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: #714457;
+}
+.cv-list strong {
+  color: var(--ink);
+}
+.cv-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+.cv-close-btn {
+  background: #f3d2e2;
+  color: var(--ink);
+}
+
+/* Gece Modu (Dark Pink / Koyu Mürdüm Cam Teması) */
+html[data-theme="dark"] {
+  --paper: #1d0e16;
+  --pink: #52233b;
+  --ink: #fcebf3;
+  --accent: #ff85b8;
+  --line: #492337;
+}
+html[data-theme="dark"] body {
+  background: #1a0d14;
+  background-image:
+    radial-gradient(ellipse at 0% 0%, #371829 0%, transparent 45%),
+    radial-gradient(ellipse at 95% 20%, #441b32 0%, transparent 43%),
+    radial-gradient(ellipse at 10% 65%, #2f1424 0%, transparent 40%),
+    linear-gradient(145deg, #1b0d15, #291320 55%, #180b12);
+  color: var(--ink);
+}
+html[data-theme="dark"] nav,
+html[data-theme="dark"] .about,
+html[data-theme="dark"] .contact {
+  background: #2b1521cc;
+  border-color: #552940;
+  box-shadow: 0 18px 55px #09030666;
+}
+html[data-theme="dark"] .projects,
+html[data-theme="dark"] .ribbon {
+  background: #26121db3;
+  border-color: #4d253a;
+}
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .skill-card,
+html[data-theme="dark"] .contact-box,
+html[data-theme="dark"] .contact-item,
+html[data-theme="dark"] .timeline-item,
+html[data-theme="dark"] .now-item {
+  background: #311826d9;
+  border-color: #582b43;
+  box-shadow: 0 12px 35px #08020555;
+}
+html[data-theme="dark"] .now-box {
+  background: linear-gradient(135deg, #2e1624e6, #3b1b2de6);
+  border-color: #5c2d46;
+}
+html[data-theme="dark"] .hero .intro,
+html[data-theme="dark"] .copy,
+html[data-theme="dark"] .sectionhead p,
+html[data-theme="dark"] .closing p,
+html[data-theme="dark"] .card p,
+html[data-theme="dark"] .skill-card p,
+html[data-theme="dark"] .timeline-item p,
+html[data-theme="dark"] .now-item p,
+html[data-theme="dark"] .language-note,
+html[data-theme="dark"] #project-count,
+html[data-theme="dark"] .cv-role,
+html[data-theme="dark"] .cv-contact-mini,
+html[data-theme="dark"] .cv-list,
+html[data-theme="dark"] dialog p,
+html[data-theme="dark"] footer {
+  color: #e2bfd0;
+}
+html[data-theme="dark"] .pill {
+  background: #ff85b8;
+  color: #240d19;
+  font-weight: 600;
+}
+html[data-theme="dark"] .pill:hover {
+  background: #ffa3ca;
+}
+html[data-theme="dark"] .pill-outline,
+html[data-theme="dark"] .icon-pill,
+html[data-theme="dark"] .project-filters button,
+html[data-theme="dark"] .tag,
+html[data-theme="dark"] .now-date {
+  background: #381b2b;
+  color: var(--ink);
+  border-color: #63314b;
+}
+html[data-theme="dark"] .project-filters button[aria-pressed="true"] {
+  background: var(--accent);
+  color: #240d19;
+  border-color: var(--accent);
+}
+html[data-theme="dark"] .tech-tags span,
+html[data-theme="dark"] .skill-pills span,
+html[data-theme="dark"] .now-badge,
+html[data-theme="dark"] .copy-btn,
+html[data-theme="dark"] .repo-actions a {
+  background: #421f32;
+  border-color: #68334e;
+  color: #fcebf3;
+}
+html[data-theme="dark"] .repo-banner {
+  background: linear-gradient(125deg, #4b2138, #381829);
+}
+html[data-theme="dark"] .repo-banner > span {
+  color: #ff99c4;
+}
+html[data-theme="dark"] .skill-icon,
+html[data-theme="dark"] .contact-icon {
+  background: linear-gradient(135deg, #52233c, #3d192c);
+  color: #ff94c2;
+}
+html[data-theme="dark"] .language-track {
+  background: #472336;
+}
+html[data-theme="dark"] .field label {
+  color: #e6bdd1;
+}
+html[data-theme="dark"] .field input,
+html[data-theme="dark"] .field select,
+html[data-theme="dark"] .field textarea {
+  background: #23101b;
+  border-color: #5b2c44;
+  color: var(--ink);
+}
+html[data-theme="dark"] .field input:focus,
+html[data-theme="dark"] .field select:focus,
+html[data-theme="dark"] .field textarea:focus {
+  background: #2c1422;
+  border-color: var(--accent);
+}
+html[data-theme="dark"] dialog {
+  background: #28131ef5;
+  border-color: #63304a;
+  color: var(--ink);
+}
+html[data-theme="dark"] .cat-moon {
+  background: radial-gradient(circle at 30% 30%, #4d2238c9, #2f132299);
+  border-color: #68324e;
+}
+html[data-theme="dark"] .timeline-block,
+html[data-theme="dark"] .now-header,
+html[data-theme="dark"] .cv-header,
+html[data-theme="dark"] .cv-section,
+html[data-theme="dark"] footer {
+  border-color: #4d253a;
+}
+
+@media (max-width: 800px) {
+  nav {
+    height: auto;
+    min-height: 74px;
+    padding: 12px 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .nav-right {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .skills-grid,
+  .now-grid {
+    grid-template-columns: 1fr;
+  }
+  .now-box {
+    padding: 24px 20px;
+  }
+  .cv-dialog {
+    padding: 24px 18px;
+  }
+  .cv-contact-mini {
+    text-align: left;
+  }
+}
+
+/* Tıklanabilir şerit (ribbon) ve etiket (tag) efektleri */
+.ribbon a {
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition:
+    color 0.18s,
+    border-color 0.18s;
+}
+.ribbon a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+a.tag {
+  display: inline-block;
+  transition:
+    background 0.18s,
+    transform 0.18s,
+    border-color 0.18s;
+}
+a.tag:hover {
+  background: #f5d1e3;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+html[data-theme="dark"] a.tag:hover {
+  background: #4e243b;
+  border-color: var(--accent);
+}
+.cv-empty {
+  min-height: 120px;
+}
+
+/* Yazdırma (PDF Olarak Kaydet) Modu: Sadece CV temiz bir A4 sayfası olarak çıkar */
+@media print {
+  body > *:not(#cv-modal) {
+    display: none !important;
+  }
+  #cv-modal {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .cv-actions {
+    display: none !important;
+  }
+}
